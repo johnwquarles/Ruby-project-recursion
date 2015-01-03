@@ -1,7 +1,7 @@
-def mergesort(arr)
+def merge_sort(arr)
   return arr if arr.length == 1
-  left = mergesort(arr[0...(arr.length/2)])
-  right = mergesort(arr[(arr.length/2)...arr.length])
+  left = merge_sort(arr[0...(arr.length/2)])
+  right = merge_sort(arr[(arr.length/2)...arr.length])
   return merge(left, right)
 end
 
